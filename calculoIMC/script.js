@@ -9,14 +9,16 @@ function mostra(frase){
 
 //calcular IMC é peso/(altura * altura)
 
-
-var peso = document.getElementById('peso');
-var altura = document.getElementById('altura');
-var resultado = document.getElementById('resultado');
-
-var calcularImc = document.getElementById('calcular')
-calcularImc.addEventListener('click', calculado)
-
-function calculado(){
-    resultado.innerHTML = parseFloat(peso.value)/(parseFloat(altura.value)*parseFloat(altura.value))
+function calculaImc(peso, altura){
+    // var imc = peso/(altura * altura);
+    // return imc;
+    return peso/(altura * altura);
 }
+
+var nome = prompt('Qual o seu nome?')
+var pesoInformado = prompt(`Olá, ${nome}, por gentileza, digite o seu peso.`)
+var alturaInformada = prompt(`${nome}, digite a sua altura, por favor.`)
+
+var imc = calculaImc(pesoInformado, alturaInformada);
+
+document.write(`O IMC informado é ${imc}`);
