@@ -22,3 +22,12 @@ var alturaInformada = prompt(`${nome}, digite a sua altura, por favor.`)
 var imc = calculaImc(pesoInformado, alturaInformada);
 
 document.write(`O IMC informado é ${imc}`);
+pulaLinha();
+
+if(imc < 18.5){
+    mostra("Você está abaixo do recomendado.")
+}else if(imc >= 18.5 && imc <=35){
+    mostra("Seu imc está saudável")
+}else if(imc > 35){
+    mostra("Voê está acima do peso.")
+}
