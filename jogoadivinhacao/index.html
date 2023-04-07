@@ -19,13 +19,23 @@ function mostra(frase){
     pulaLinha();
 }
 
-var numeroPensado = Math.round(Math.random()*10);
+//var numeroPensado = Math.round(Math.random()*10);
+//var chute = parseInt(prompt("Digite o seu chute"))
+function sorteia(n){
+    return Math.round(Math.random()* n) 
+}
+
+var numeroPensado = sorteia(20)
 var chute = parseInt(prompt("Digite o seu chute"))
 
 if(chute == numeroPensado){
     mostra("Você acertou, parabéns!!")
-}else{
-    mostra(`Você errou, o número pensado é: ${numeroPensado}`)
+}else {
+    if(chute > numeroPensado){
+        mostra(`Você errou, seu chute é maior que o número pensado.`)
+    }else{
+        mostra(`Você errou! Seu número é menor que o número pensado!`)
+    }
 }
 
 </script>    
