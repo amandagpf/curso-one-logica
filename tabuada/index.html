@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+function pulaLinha(){
+    document.write("<br><br>");
+}
+
+function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+}
+
+//Aprendendo repetição WHILE
+
+var multiplicador = 1;
+
+while(multiplicador <= 9){
+    mostra(7*multiplicador);
+    multiplicador = multiplicador + 1;
+}
+
+mostra("FIM da tabuada do 7")
+
+//Aprendendo repetição FOR
+
+for(var multiplicador=1; multiplicador <= 9; multiplicador = multiplicador + 1){
+    mostra(9 * multiplicador)
+}
+
+mostra("FIM da tabuada do 9")
+
+//Atalho para incrementar uma variável de um em um
+var total = 0;
+total = total + 1; //Essa é a forma sem atalho.
+total++ // isso se chama pós incremento.
+
+</script>    
+</body>
+</html>
