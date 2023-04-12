@@ -22,10 +22,20 @@
         }
 
         var x = 0;
+        var y = 50;
+        var z = 50;
+        var a = 0;
+
         while(x < 600){
             desenhaqudrado(x, 0, 'green');
-            x = x + 50;
-        }
+            x = x + 100;
+            desenhaqudrado(y, 50, 'red');
+            y = y + 100;
+            desenhaqudrado(z, 0, 'white');
+            z = z + 100;
+            desenhaqudrado(a, 50, 'white');
+            a = a + 100;
+        } //pode fazer isso com o for tbm
 
     </script>
 </body>
